@@ -1,0 +1,51 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #fdf6f9;
+    color: #333;
+}
+
+header {
+    background: #e8dff5;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    color: #4a3f6b;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #6a5acd;
+}
+
+.skills ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.project-card {
+    background: #f3e8ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+a {
+    color: #6a5acd;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #e8dff5;
+}
