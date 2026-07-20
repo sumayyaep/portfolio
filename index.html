@@ -3,72 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sumayya EP | Portfolio</title>
+<title>Sumayya EP | Cybersecurity Portfolio</title>
 
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #f8f6ff, #f0ebff);
-    color: #333;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
 }
 
 /* NAVBAR */
 nav {
-    background: #e6dcff;
+    background: #1f2937;
     padding: 15px;
     text-align: center;
 }
 nav a {
+    color: #fff;
     margin: 0 15px;
     text-decoration: none;
-    color: #4b3f72;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /* HERO */
 .hero {
-    padding: 60px 20px;
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffffff;
 }
 .profile {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    border: 5px solid #e6dcff;
-    margin-bottom: 15px;
+    border: 3px solid #ccc;
+}
+.hero h1 {
+    margin: 10px 0;
+}
+.hero p {
+    color: #555;
 }
 
 /* SECTION */
 .section {
     padding: 40px 20px;
 }
-.card {
-    background: white;
-    margin: 20px auto;
-    padding: 25px;
-    border-radius: 15px;
+.container {
     width: 80%;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    margin: auto;
+}
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
-/* SKILLS */
-.skills span {
-    display: inline-block;
-    background: #e6dcff;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 20px;
-}
-
-/* PROJECT */
-.project {
-    text-align: left;
+/* LIST */
+ul {
+    padding-left: 20px;
 }
 
 /* FOOTER */
 footer {
-    background: #e6dcff;
+    text-align: center;
     padding: 15px;
+    background: #1f2937;
+    color: white;
 }
 </style>
 </head>
@@ -78,6 +81,7 @@ footer {
 <!-- NAVBAR -->
 <nav>
   <a href="#about">About</a>
+  <a href="#education">Education</a>
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
@@ -85,52 +89,73 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-  <img src="profile.jpg" class="profile">
-  <h1>Hi, I'm Sumayya EP 💜</h1>
+  <img src="profile.jpg" class="profile" alt="Profile Photo">
+  <h1>Sumayya EP</h1>
   <p>Cybersecurity Enthusiast | BCA Graduate</p>
 </div>
+
+<div class="container">
 
 <!-- ABOUT -->
 <div id="about" class="section">
   <div class="card">
     <h2>About Me</h2>
     <p>
-      I am a BCA graduate from Jamia Hamdard Kannur Campus and currently 
-      learning cybersecurity at Offenso Hacker Academy. I am passionate about 
-      network security, ethical hacking, and protecting digital systems.
+      I am a BCA graduate from Jamia Hamdard Kannur Campus (2026) and currently 
+      pursuing cybersecurity training at Offenso Hacker Academy. I have a strong 
+      interest in network security, ethical hacking, and system protection.
     </p>
+    <p>
+      I am a motivated fresher looking to start my career in cybersecurity where 
+      I can apply my technical knowledge and continuously learn new security practices.
+    </p>
+  </div>
+</div>
+
+<!-- EDUCATION -->
+<div id="education" class="section">
+  <div class="card">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Computer Applications (BCA)</strong><br>
+      Jamia Hamdard Kannur Campus — 2026</li>
+    </ul>
   </div>
 </div>
 
 <!-- SKILLS -->
 <div id="skills" class="section">
   <div class="card">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Networking</span>
-      <span>Cybersecurity Basics</span>
-      <span>Wireshark</span>
-      <span>Nmap</span>
-      <span>Flutter</span>
-      <span>Node.js</span>
-      <span>MongoDB</span>
-      <span>JavaScript</span>
-    </div>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Networking Fundamentals (IP, DNS, DHCP)</li>
+      <li>Cybersecurity Basics</li>
+      <li>Tools: Wireshark, Nmap (Learning)</li>
+      <li>Frontend: Flutter (Dart)</li>
+      <li>Backend: Node.js, Express.js</li>
+      <li>Database: MongoDB</li>
+      <li>Programming: JavaScript, Dart</li>
+    </ul>
   </div>
 </div>
 
 <!-- PROJECTS -->
 <div id="projects" class="section">
-  <div class="card project">
+  <div class="card">
     <h2>Projects</h2>
 
-    <h3>👵 Elder Care App</h3>
+    <h3>Elder Care Mobile Application</h3>
     <p>
-      Developed a mobile application to support senior citizens by assigning caretakers.
-      Guardians can monitor real-time updates of their loved ones.
+      Developed a mobile application as part of a group project (5 members) to assist 
+      senior citizens by assigning caretakers and enabling guardians to monitor real-time updates.
     </p>
-    <p><strong>Tech:</strong> Flutter, Node.js, Express.js, MongoDB</p>
 
+    <ul>
+      <li>Implemented frontend using Flutter (Dart)</li>
+      <li>Built backend using Node.js and Express.js</li>
+      <li>Used MongoDB for database management</li>
+      <li>Focused on usability and real-time monitoring features</li>
+    </ul>
   </div>
 </div>
 
@@ -144,9 +169,11 @@ footer {
   </div>
 </div>
 
+</div>
+
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Sumayya EP 💜</p>
+  <p>© 2026 Sumayya EP</p>
 </footer>
 
 </body>
