@@ -1,63 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumayya EP | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumayya EP | Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f8f6ff, #f0ebff);
+    color: #333;
+}
+
+/* NAVBAR */
+nav {
+    background: #e6dcff;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4b3f72;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    padding: 60px 20px;
+}
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #e6dcff;
+    margin-bottom: 15px;
+}
+
+/* SECTION */
+.section {
+    padding: 40px 20px;
+}
+.card {
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #e6dcff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* PROJECT */
+.project {
+    text-align: left;
+}
+
+/* FOOTER */
+footer {
+    background: #e6dcff;
+    padding: 15px;
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Sumayya EP</h1>
-        <p>Aspiring Cybersecurity Professional</p>
-    </header>
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a BCA graduate from Jamia Hamdard Kannur Campus (2026) and currently learning cybersecurity at Offenso Hacker Academy. 
-            I am passionate about network security, ethical hacking, and continuously improving my technical skills.
-        </p>
-    </section>
+<!-- HERO -->
+<div class="hero">
+  <img src="profile.jpg" class="profile">
+  <h1>Hi, I'm Sumayya EP 💜</h1>
+  <p>Cybersecurity Enthusiast | BCA Graduate</p>
+</div>
 
-    <section class="education">
-        <h2>Education</h2>
-        <p>BCA - Jamia Hamdard Kannur Campus (2026)</p>
-    </section>
+<!-- ABOUT -->
+<div id="about" class="section">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      I am a BCA graduate from Jamia Hamdard Kannur Campus and currently 
+      learning cybersecurity at Offenso Hacker Academy. I am passionate about 
+      network security, ethical hacking, and protecting digital systems.
+    </p>
+  </div>
+</div>
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Networking Basics</li>
-            <li>Cybersecurity Fundamentals</li>
-            <li>Linux (Kali Linux)</li>
-            <li>Git & Version Control</li>
-            <li>Dart & JavaScript</li>
-        </ul>
-    </section>
+<!-- SKILLS -->
+<div id="skills" class="section">
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Networking</span>
+      <span>Cybersecurity Basics</span>
+      <span>Wireshark</span>
+      <span>Nmap</span>
+      <span>Flutter</span>
+      <span>Node.js</span>
+      <span>MongoDB</span>
+      <span>JavaScript</span>
+    </div>
+  </div>
+</div>
 
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Elder Care App</h3>
-            <p>
-                A mobile application developed using Flutter, Node.js, Express.js, and MongoDB.
-                It allows assigning caretakers to senior citizens and enables guardians to monitor live updates.
-            </p>
-        </div>
-    </section>
+<!-- PROJECTS -->
+<div id="projects" class="section">
+  <div class="card project">
+    <h2>Projects</h2>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: sumayyaep2@gmail.com</p>
-        <p>Phone: +91 8075309210</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sumayya-ep-447559365" target="_blank">View Profile</a></p>
-    </section>
+    <h3>👵 Elder Care App</h3>
+    <p>
+      Developed a mobile application to support senior citizens by assigning caretakers.
+      Guardians can monitor real-time updates of their loved ones.
+    </p>
+    <p><strong>Tech:</strong> Flutter, Node.js, Express.js, MongoDB</p>
 
-    <footer>
-        <p>© 2026 Sumayya EP</p>
-    </footer>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+    <p>Phone: +91 XXXXX XXXXX</p>
+    <p>LinkedIn: your-link</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Sumayya EP 💜</p>
+</footer>
 
 </body>
 </html>
